@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-xs-10">
+      <h3>
+        Reporter Responses
+      </h3>
+    <hr>
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        style="cursor: pointer;"
+        *ngFor="let response of reportResponses; let i = index"
+      >
+        {{response.name}} ({{response.status}})      
+      <div class="btn-group pull-right">
+        <button class="btn btn-xs btn-danger" (click)="ignoreResponse(response)">Ignore</button>
+        <button class="btn btn-xs btn-success" (click)="approveResponse(response)">Approve</button>
+      </div>
+    </li>
+    </ul>
+  </div>
+</div>
