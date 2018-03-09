@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-xs-12">
+      <form [formGroup]="reporterForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-xs-12">
+              
+            <div class="form-group">
+              <label for="name">Type Of Sales</label>                
+              <div class="radio">
+                <label><input value="download" formControlName="name" type="radio" name="name">Download Sales</label>
+              </div>
+              <div class="radio">
+                <label><input value="store" formControlName="name" type="radio" name="name">Store Sales</label>
+              </div>
+              <div class="radio">
+                <label><input value="mail" formControlName="name" type="radio" name="name">Mail Sales</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <button type="submit" class="btn btn-success" [disabled]="!reporterForm.valid">Save</button>
+            <!-- <button type="submit" class="btn btn-danger" (click)="onCancel()">Cancel</button> -->
+          </div>
+        </div>        
+      </form>
+    </div>
+  </div>
