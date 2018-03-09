@@ -19,6 +19,7 @@ import { FormComponent } from './reporter/form/form.component';
 
 import { ResponseService } from "app/shared/response.service";
 import { DataStorageService } from "app/shared/data-storage.service";
+import { AuthService } from "app/auth/auth.service";
 
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 
@@ -47,7 +48,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   providers: [
     DataStorageService,
-    ResponseService,
+    ResponseService
   ],
   bootstrap: [AppComponent]
 })

@@ -4,8 +4,10 @@ import { Subject } from "rxjs/Subject";
 
 // I don't know where to put this exactly
 import Parse from 'parse'
+
 Parse.initialize("devliveKey");
 Parse.serverURL = 'http://localhost:1337/parse';
+
 
 var OResponse = Parse.Object.extend("Response");
 var query = new Parse.Query(OResponse);

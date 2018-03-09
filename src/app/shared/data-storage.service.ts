@@ -5,8 +5,7 @@ import 'rxjs/Rx';
 
 @Injectable()
 export class DataStorageService {
-  constructor(private http: Http,
-    private responseService: ResponseService) {}
+  constructor(private http: Http, private responseService: ResponseService) {}
   storeRecipes() {
     // return this.http.put('https://ng-recipes-bdc7c.firebaseio.com/recipes.json?auth='+token, this.responseService.getResponses())
   }

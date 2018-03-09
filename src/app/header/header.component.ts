@@ -10,10 +10,5 @@ import { Router } from "@angular/router";
 
 export class HeaderComponent {
   // property is publicly outside, app can use it. just define this as a prop in theelement
-  constructor(private dataStorageService: DataStorageService,
-    private router: Router) { }
-
-  onLogOut() {
-    this.router.navigate(['/signin'])
-  }
+  constructor(private dataStorageService: DataStorageService, private router: Router) { }
 }
